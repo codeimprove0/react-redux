@@ -9,7 +9,7 @@ const studentReducer = (state='',action)=>{
         name:action.payload
       }
       return state
-      break;
+    break;
 
     case "SET_SID": 
       state = {
@@ -17,9 +17,43 @@ const studentReducer = (state='',action)=>{
         studentId:action.payload
       }
       return state
-      break;
+    break;
 
-      default: 
+    case "GET_MARKS": 
+      state = {
+        ...state,
+        marks:action.payload
+      }
+      return state
+    break;
+
+    case "GET_MARKS_DONE": 
+      state = {
+        ...state,
+        marks:action.payload
+      }
+      return state
+    break;
+
+
+    case "GET_AGE": 
+      state = {
+        ...state,
+        age:action.payload
+      }
+      return state
+    break;
+
+    case "GET_AGE_DONE": 
+      state = {
+        ...state,
+        age:action.payload
+      }
+      return state
+    break;
+  
+
+    default: 
       return state
  
   }

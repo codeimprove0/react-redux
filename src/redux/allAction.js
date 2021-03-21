@@ -35,5 +35,31 @@ export const updateStudentId = (studentId)=>{
     }
 }
 
+export const getMarks = (marks)=>{
+    return {
+        type:'GET_MARKS',
+        payload:marks
+    } 
+}
+
+export const doneMarks = (marks)=>{
+    return {
+        type:'GET_MARKS_DONE',
+        payload:marks
+    } 
+}
 
 
+export const getAge = (age)=>{
+    return {
+        type:'GET_AGE',
+        payload:age
+    } 
+}
+
+export const doneAge = (age)=>{
+    return {
+        type:'GET_AGE_DONE',
+        payload:age
+    } 
+}
